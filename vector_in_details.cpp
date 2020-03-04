@@ -62,3 +62,36 @@ int main() {
 }
 
 //we can also insert the value inside the vector using iterator.
+
+
+
+#include <bits/stdc++.h>
+#include <iostream>
+using namespace std;
+int main()
+{
+	vector <int> v(4,5);
+	for(auto x:v)
+	 cout<<x<<" ";
+	 cout<<endl;
+    vector <int> v1(v.begin(),v.end());
+    for(auto x:v1)
+	 cout<<x<<" ";
+	cout<<endl;
+	vector <int> v4;
+	int n;
+	cin>>n;
+	for(int i=0;i<n;i++)
+	{
+		int a;
+		cin>>a;
+		v4.push_back(a);
+	}
+	for(auto x: v4)
+	 cout<<x<<" ";
+cout<<endl;
+cout<<v.size()<<endl;    //the memory firstly intailzed is allocated.
+cout<<v4.size()<<endl;    
+cout<<v.capacity()<<endl;
+cout<<v4.capacity()<<endl;   //memory increases dynamically 2,4,8,16....
+}
