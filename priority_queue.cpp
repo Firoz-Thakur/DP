@@ -22,3 +22,25 @@ int main() {
 
 	
 }
+
+
+
+
+//function object
+
+#include <iostream>
+#include <bits/stdc++.h>
+using namespace std;
+
+class fun{
+	public:
+	void operator()(string s){
+		cout<<"hye firoz do something unique in"<<s;
+	}
+};
+int main() {
+	// your code goes here
+ fun f;
+ f("c++");
+ return 0;
+}
