@@ -26,6 +26,7 @@ int main() {
 
 
 
+
 //function object
 
 #include <iostream>
